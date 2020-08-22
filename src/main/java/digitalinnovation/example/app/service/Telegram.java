@@ -27,7 +27,6 @@ public class Telegram {
         //RestTemplate
         restTemplateClient.enviarMensagem(mensagem);
 
-        //FeingClient
         ResultBotTelegram resultBotTelegram = feingClient.enviarMensagem1(mensagem);
     }
 
@@ -38,8 +37,7 @@ public class Telegram {
         //RestTemplate
         ResultBotTelegramList resultBotTelegramList1 = restTemplateClient.buscarAtualizacao();
 
-        //FeingClient
-        feingClient.buscaratualizacao();
+         feingClient.buscaratualizacao();
         return resultBotTelegramList;
     }
 }
